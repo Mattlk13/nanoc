@@ -80,7 +80,7 @@ module Nanoc
 
     # @api private
     def binary?
-      @context.snapshot_repo.compiled_content(rep: unwrap, snapshot: :last).binary?
+      @context.snapshot_repo.raw_compiled_content(rep: unwrap, snapshot: :last).binary?
     end
 
     def inspect
